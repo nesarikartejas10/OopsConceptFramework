@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 4, Errors: 0, Skipped: 6, Time elapsed: 44.303 s <<< FAILURE! - in TestSuite
+setUpTest(com.mytests.LoginTest)  Time elapsed: 11.561 s  <<< FAILURE!
+org.openqa.selenium.remote.NoSuchDriverException: 
+Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [C:\Users\india\AppData\Local\Temp\selenium-manager8673758908088005602558286376208711\selenium-manager.exe, --browser, chrome, --output, json]
+The process cannot access the file because it is being used by another process. (os error 32)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: driver.version: ChromeDriver
+Caused by: org.openqa.selenium.WebDriverException: 
+Command failed with code: 65, executed: [C:\Users\india\AppData\Local\Temp\selenium-manager8673758908088005602558286376208711\selenium-manager.exe, --browser, chrome, --output, json]
+The process cannot access the file because it is being used by another process. (os error 32)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: driver.version: ChromeDriver
+
+setUpTest(com.mytests.LoginTest)  Time elapsed: 3.252 s  <<< FAILURE!
+org.openqa.selenium.remote.NoSuchDriverException: 
+Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [C:\Users\india\AppData\Local\Temp\selenium-manager8673758908088005602558286376208711\selenium-manager.exe, --browser, chrome, --output, json]
+The process cannot access the file because it is being used by another process. (os error 32)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: driver.version: ChromeDriver
+Caused by: org.openqa.selenium.WebDriverException: 
+Command failed with code: 65, executed: [C:\Users\india\AppData\Local\Temp\selenium-manager8673758908088005602558286376208711\selenium-manager.exe, --browser, chrome, --output, json]
+The process cannot access the file because it is being used by another process. (os error 32)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: driver.version: ChromeDriver
+
+verifyLoginPageHeaderTest(com.mytests.LoginTest)  Time elapsed: 1.378 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.getText()" because the return value of "com.mypages.BasePage.getElement(org.openqa.selenium.By)" is null
+	at com.mytests.LoginTest.verifyLoginPageHeaderTest(LoginTest.java:20)
+
+doLoginTest(com.mytests.LoginTest)  Time elapsed: 0.479 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because the return value of "com.mypages.LoginPage.getEmailId()" is null
+	at com.mytests.LoginTest.doLoginTest(LoginTest.java:27)
+
